@@ -2,4 +2,4 @@ var chai = require('chai');
 global.expect = chai.expect;
 chai.should();
 
-global.SC = require('../');
+global.SC = require('../lib');

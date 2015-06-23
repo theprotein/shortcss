@@ -1,8 +1,8 @@
 {
   "name": "shortcss",
   "version": "0.1.1",
-  "description": "CSS Shorthand parser/combiner",
-  "main": "index.js",
+  "description": "CSS Shorthand expander/combiner",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -15,6 +15,7 @@
     "shorthand",
     "short",
     "parser",
+    "expander",
     "combiner"
   ],
   "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
