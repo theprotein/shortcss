@@ -1,0 +1,2 @@
+-r test/init.js
+-R spec
