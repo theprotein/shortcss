@@ -1,6 +1,6 @@
-describe.skip('expand as object', function () {
+describe('expand as object', function () {
 
-    it.skip('should expand border shorthand with a value and flag to an object', function () {
+    it('should expand border shorthand with a value and flag to an object', function () {
         SC.expand('border', '1px solid red', false)
             .should.eql({
                 'border-width': '1px',
@@ -11,7 +11,7 @@ describe.skip('expand as object', function () {
 
     it('should expand border shorthand with a value to an object', function () {
         SC.expand('border', '1px solid red')
-            .should.sql({
+            .should.eql({
                 'border-top-width': '1px',
                 'border-right-width': '1px',
                 'border-bottom-width': '1px',
