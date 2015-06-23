@@ -30,6 +30,7 @@ npm install shortcss
 * Takes a CSS shorthand property and returns a list of longhand properties
 * **Parameters**:
 	* `property` _(string)_ Shorthand property to expand.
+	* `value` _(string)_ Split also a value to expanded properties. In that way the function will return an object.
 	* `recurse` _(boolean – optional, default `false`)_ If true, each longhand property will also be run through `expand()`. This is only useful for the `border` property.
 * **Returns**: _Array|Object_ with a list of longhand properties that the given property expands to. If the property is not a shorthand, the array contains only the original property.
 
@@ -82,7 +83,6 @@ SC.expand('border', '1px solid red');
   'border-left-color': 'red'
 }
 */
-```
 
 // ... and the same with recurse flag set to false
 SC.expand('border', '1px solid red', false);
@@ -93,8 +93,9 @@ SC.expand('border', '1px solid red', false);
   'border-color': 'red'
 }
 */
+```
 
 
 ## Licence
 
-MIT: [https://github.com/theprotein/shortcss/blob/master/LICENSE]()
+MIT: [License](https://github.com/theprotein/shortcss/blob/master/LICENSE)
